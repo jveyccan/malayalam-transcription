@@ -5,10 +5,10 @@ from pydub import AudioSegment
 
 argumentList = sys.argv
 
-path = "/home/acer/transcription/"
+path = "<insert the path of the file>"
 
 orig_song = path + argumentList[1]
-dest_song = "/home/acer/transcription/result.wav"
+dest_song = path + "result.wav"
 
 def convert_ogg_to_wav():
     song = AudioSegment.from_ogg(orig_song)
